@@ -19,7 +19,7 @@ export default async function handler(req, res) {
         temperature: 0.7
       })
     });
-
+// Minor update to force rebuild
     const data = await response.json();
     res.status(200).json(data);
   } catch (err) {
